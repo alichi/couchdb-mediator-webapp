@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="2.233" errors="2" skipped="0" tests="2" name="com.loghmani.nosql.couchdb.mediator.RecipeControllerTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_09\jre\bin"/>
+    <property name="java.vm.version" value="23.5-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\sandbox\my_own\couchdb-connector\ektorp-sample\mediator-couchdb"/>
+    <property name="java.runtime.version" value="1.7.0_09-b05"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_09\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ALI~1.LOG\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\sandbox\toys\maven\3.0.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_09\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Dell\DW WLAN Card;;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\NTRU Cryptosystems\NTRU TCG Software Stack\bin\;C:\Program Files\Dell\Dell Data Protection\Access\Advanced\Wave\Gemalto\Access Client\v5\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files\Java\jdk1.7.0_09\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\sandbox\toys\ant\1.8.4\bin;C:\sandbox\toys\maven\3.0.4\bin;C:\sandbox\toys\hat\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\Ruby193\bin;C:\Users\Ali.Loghmani\AppData\Roaming\npm\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Ali.Loghmani"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Ali.Loghmani"/>
+    <property name="java.class.path" value="C:\sandbox\toys\maven\3.0.4\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_09\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -T2"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_09\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_09\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_09\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_09\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\sandbox\toys\maven\3.0.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="1.92" classname="com.loghmani.nosql.couchdb.mediator.RecipeControllerTest" name="testGET">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.loghmani.nosql.couchdb.mediator.RecipeController.readRecipe(RecipeController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:176)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:439)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:427)
+	at com.loghmani.nosql.couchdb.mediator.RecipeControllerTest.testGET(RecipeControllerTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>2013-02-19 19:47:35,051 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/mediator-dispatcher-servlet.xml]&gt;
+2013-02-19 19:47:35,335 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from class path resource [META-INF/spring/couchDBRecipeConfig.xml]&gt;
+2013-02-19 19:47:35,384 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from class path resource [META-INF/spring/couchDBRecipeConfig.xml]&gt;
+2013-02-19 19:47:35,427 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Overriding bean definition for bean &apos;couchdbProperties&apos;: replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]&gt;
+2013-02-19 19:47:35,427 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Overriding bean definition for bean &apos;recipeDatabase&apos;: replacing [Generic bean: class [org.ektorp.impl.StdCouchDbConnector]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.ektorp.impl.StdCouchDbConnector]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]&gt;
+2013-02-19 19:47:35,433 INFO [org.springframework.context.support.GenericApplicationContext] - &lt;Refreshing org.springframework.context.support.GenericApplicationContext@71ba5839: startup date [Tue Feb 19 19:47:35 PST 2013]; root of context hierarchy&gt;
+2013-02-19 19:47:35,580 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - &lt;Loading properties file from class path resource [couchdb.properties]&gt;
+2013-02-19 19:47:35,632 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6f888eb8: defining beans [recipeRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,recipeController,org.springframework.aop.config.internalAutoProxyCreator,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,jacksonMessageChanger,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,couchdbProperties,recipeDatabase,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy&gt;
+2013-02-19 19:47:35,662 INFO [org.ektorp.spring.HttpClientFactoryBean] - &lt;Starting couchDb connector on localhost:5984...&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;host: localhost&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;port: 5984&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;url: http://localhost:5984&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;maxConnections: 20&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;connectionTimeout: 1000&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;socketTimeout: 10000&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;autoUpdateViewOnChange: false&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;testConnectionAtStartup: false&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;cleanupIdleConnections: true&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;enableSSL: false&gt;
+2013-02-19 19:47:35,662 DEBUG [org.ektorp.spring.HttpClientFactoryBean] - &lt;relaxedSSLSettings: false&gt;
+2013-02-19 19:47:35,913 DEBUG [org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager] - &lt;Get connection: HttpRoute[{}-&gt;http://localhost:5984], timeout = 1000&gt;
+2013-02-19 19:47:35,915 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;[HttpRoute[{}-&gt;http://localhost:5984]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20&gt;
+2013-02-19 19:47:35,915 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;No free connections [HttpRoute[{}-&gt;http://localhost:5984]][null]&gt;
+2013-02-19 19:47:35,915 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Available capacity: 20 out of 20 [HttpRoute[{}-&gt;http://localhost:5984]][null]&gt;
+2013-02-19 19:47:35,915 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Creating new connection [HttpRoute[{}-&gt;http://localhost:5984]]&gt;
+2013-02-19 19:47:35,934 DEBUG [org.apache.http.impl.conn.DefaultClientConnectionOperator] - &lt;Connecting to localhost:5984&gt;
+2013-02-19 19:47:35,947 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - &lt;CookieSpec selected: best-match&gt;
+2013-02-19 19:47:35,956 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - &lt;Auth cache not set in the context&gt;
+2013-02-19 19:47:35,956 DEBUG [org.apache.http.impl.client.DefaultHttpClient] - &lt;Attempt 1 to execute request&gt;
+2013-02-19 19:47:35,956 DEBUG [org.apache.http.impl.conn.DefaultClientConnection] - &lt;Sending request: HEAD /recipes/ HTTP/1.1&gt;
+2013-02-19 19:47:35,957 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;HEAD /recipes/ HTTP/1.1[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Via: 1.1 localhost (Apache-HttpClient/4.1.2 (cache))[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Host: localhost:5984[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; HEAD /recipes/ HTTP/1.1&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Via: 1.1 localhost (Apache-HttpClient/4.1.2 (cache))&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Host: localhost:5984&gt;
+2013-02-19 19:47:35,958 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Connection: Keep-Alive&gt;
+2013-02-19 19:47:35,960 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,963 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Server: CouchDB/1.2.0 (Erlang OTP/R15B)[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,963 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Date: Wed, 20 Feb 2013 03:47:35 GMT[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,963 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Content-Type: text/plain; charset=utf-8[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,963 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Content-Length: 235[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,963 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Cache-Control: must-revalidate[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,964 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.impl.conn.DefaultClientConnection] - &lt;Receiving response: HTTP/1.1 200 OK&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; HTTP/1.1 200 OK&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Server: CouchDB/1.2.0 (Erlang OTP/R15B)&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Date: Wed, 20 Feb 2013 03:47:35 GMT&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Content-Type: text/plain; charset=utf-8&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Content-Length: 235&gt;
+2013-02-19 19:47:35,965 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Cache-Control: must-revalidate&gt;
+2013-02-19 19:47:35,968 DEBUG [org.apache.http.impl.client.DefaultHttpClient] - &lt;Connection can be kept alive indefinitely&gt;
+2013-02-19 19:47:35,969 DEBUG [org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager] - &lt;Released connection is reusable.&gt;
+2013-02-19 19:47:35,969 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Releasing connection [HttpRoute[{}-&gt;http://localhost:5984]][null]&gt;
+2013-02-19 19:47:35,969 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Pooling connection [HttpRoute[{}-&gt;http://localhost:5984]][null]; keep alive indefinitely&gt;
+2013-02-19 19:47:35,969 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Notifying no-one, there are no waiting threads&gt;
+2013-02-19 19:47:35,974 DEBUG [org.apache.http.impl.client.cache.ResponseCachingPolicy] - &lt;Response was not cacheable.&gt;
+2013-02-19 19:47:35,977 DEBUG [org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager] - &lt;Get connection: HttpRoute[{}-&gt;http://localhost:5984], timeout = 1000&gt;
+2013-02-19 19:47:35,977 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;[HttpRoute[{}-&gt;http://localhost:5984]] total kept alive: 1, total issued: 0, total allocated: 1 out of 20&gt;
+2013-02-19 19:47:35,977 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Getting free connection [HttpRoute[{}-&gt;http://localhost:5984]][null]&gt;
+2013-02-19 19:47:35,977 DEBUG [org.apache.http.impl.client.DefaultHttpClient] - &lt;Stale connection check&gt;
+2013-02-19 19:47:35,981 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - &lt;CookieSpec selected: best-match&gt;
+2013-02-19 19:47:35,981 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - &lt;Auth cache not set in the context&gt;
+2013-02-19 19:47:35,981 DEBUG [org.apache.http.impl.client.DefaultHttpClient] - &lt;Attempt 1 to execute request&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.impl.conn.DefaultClientConnection] - &lt;Sending request: HEAD /recipes/_design/Recipe HTTP/1.1&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;HEAD /recipes/_design/Recipe HTTP/1.1[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Via: 1.1 localhost (Apache-HttpClient/4.1.2 (cache))[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Host: localhost:5984[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.wire] - &lt;&gt;&gt; &quot;[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; HEAD /recipes/_design/Recipe HTTP/1.1&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Via: 1.1 localhost (Apache-HttpClient/4.1.2 (cache))&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Host: localhost:5984&gt;
+2013-02-19 19:47:35,982 DEBUG [org.apache.http.headers] - &lt;&gt;&gt; Connection: Keep-Alive&gt;
+2013-02-19 19:47:35,984 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;HTTP/1.1 404 Object Not Found[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,984 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Server: CouchDB/1.2.0 (Erlang OTP/R15B)[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,985 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Date: Wed, 20 Feb 2013 03:47:35 GMT[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,985 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Content-Type: text/plain; charset=utf-8[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,985 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Content-Length: 41[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,985 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;Cache-Control: must-revalidate[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,985 DEBUG [org.apache.http.wire] - &lt;&lt;&lt; &quot;[\r][\n]&quot;&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.impl.conn.DefaultClientConnection] - &lt;Receiving response: HTTP/1.1 404 Object Not Found&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; HTTP/1.1 404 Object Not Found&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Server: CouchDB/1.2.0 (Erlang OTP/R15B)&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Date: Wed, 20 Feb 2013 03:47:35 GMT&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Content-Type: text/plain; charset=utf-8&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Content-Length: 41&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.headers] - &lt;&lt;&lt; Cache-Control: must-revalidate&gt;
+2013-02-19 19:47:35,986 DEBUG [org.apache.http.impl.client.DefaultHttpClient] - &lt;Connection can be kept alive indefinitely&gt;
+2013-02-19 19:47:35,987 DEBUG [org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager] - &lt;Released connection is reusable.&gt;
+2013-02-19 19:47:35,987 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Releasing connection [HttpRoute[{}-&gt;http://localhost:5984]][null]&gt;
+2013-02-19 19:47:35,987 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Pooling connection [HttpRoute[{}-&gt;http://localhost:5984]][null]; keep alive indefinitely&gt;
+2013-02-19 19:47:35,987 DEBUG [org.apache.http.impl.conn.tsccm.ConnPoolByRoute] - &lt;Notifying no-one, there are no waiting threads&gt;
+2013-02-19 19:47:35,989 DEBUG [org.apache.http.impl.client.cache.ResponseCachingPolicy] - &lt;Response was not cacheable.&gt;
+2013-02-19 19:47:35,994 DEBUG [org.ektorp.support.CouchDbRepositorySupport] - &lt;Generating DesignDocument for class com.loghmani.nosql.couchdb.ektorp.client.Recipe&gt;
+2013-02-19 19:47:36,081 DEBUG [org.ektorp.support.CouchDbRepositorySupport] - &lt;DesignDocument source:
+{
+  &quot;views&quot; : {
+  },
+  &quot;lists&quot; : {
+  },
+  &quot;shows&quot; : {
+  },
+  &quot;language&quot; : &quot;javascript&quot;,
+  &quot;filters&quot; : {
+  },
+  &quot;updates&quot; : {
+  },
+  &quot;_id&quot; : &quot;_design/Recipe&quot;
+}&gt;
+2013-02-19 19:47:36,081 DEBUG [org.ektorp.support.CouchDbRepositorySupport] - &lt;DesignDocument was unchanged. Database was not updated.&gt;
+2013-02-19 19:47:36,212 INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - &lt;Mapped &quot;{[/recipe/create/params],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public java.lang.String com.loghmani.nosql.couchdb.mediator.RecipeController.createRecipeParams(java.lang.String,java.lang.String,java.lang.String[])&gt;
+2013-02-19 19:47:36,213 INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - &lt;Mapped &quot;{[/recipe/create],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[application/json],custom=[]}&quot; onto public com.loghmani.nosql.couchdb.ektorp.client.Recipe com.loghmani.nosql.couchdb.mediator.RecipeController.createRecipe(com.loghmani.nosql.couchdb.ektorp.client.Recipe)&gt;
+2013-02-19 19:47:36,213 INFO [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - &lt;Mapped &quot;{[/recipe/read/{recipeId}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}&quot; onto public com.loghmani.nosql.couchdb.ektorp.client.Recipe com.loghmani.nosql.couchdb.mediator.RecipeController.readRecipe(java.lang.String)&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create/params] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create/params.*] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create/params/] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create.*] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,702 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/create/] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,703 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/read/{recipeId}] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,703 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/read/{recipeId}.*] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,703 INFO [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping] - &lt;Mapped URL path [/recipe/read/{recipeId}/] onto handler &apos;recipeController&apos;&gt;
+2013-02-19 19:47:36,807 INFO [org.springframework.beans.factory.config.PropertiesFactoryBean] - &lt;Loading properties file from class path resource [couchdb.properties]&gt;
+2013-02-19 19:47:36,872 DEBUG [com.loghmani.nosql.couchdb.mediator.RecipeController] - &lt;reading recipe for ID = my-first-recipef8dad871-eb8b-4385-9cec-e2e259cb937e&gt;
+</system-out>
+  </testcase>
+  <testcase time="0.112" classname="com.loghmani.nosql.couchdb.mediator.RecipeControllerTest" name="testPOST">
+    <error message="Content type &apos;application/json&apos; not supported" type="org.springframework.web.HttpMediaTypeNotSupportedException">org.springframework.web.HttpMediaTypeNotSupportedException: Content type &apos;application/json&apos; not supported
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.readWithMessageConverters(HandlerMethodInvoker.java:645)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.resolveRequestBody(HandlerMethodInvoker.java:605)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.resolveHandlerArguments(HandlerMethodInvoker.java:354)
+	at org.springframework.web.bind.annotation.support.HandlerMethodInvoker.invokeHandlerMethod(HandlerMethodInvoker.java:171)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.invokeHandlerMethod(AnnotationMethodHandlerAdapter.java:439)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter.handle(AnnotationMethodHandlerAdapter.java:427)
+	at com.loghmani.nosql.couchdb.mediator.RecipeControllerTest.testPOST(RecipeControllerTest.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+</testsuite>
